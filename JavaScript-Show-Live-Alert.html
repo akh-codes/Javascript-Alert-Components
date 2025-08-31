@@ -4,23 +4,31 @@
   <meta charset="UTF-8">
   <title>Alert Box Example</title>
   <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     .alert {
-      padding: 15px;
+      padding: 15px 40px 15px 15px; /* extra right padding for cross */
       background-color: #f44336; /* red background */
       color: white;
-      margin: 20px;
       border-radius: 5px;
       position: relative;
+      font-size: 16px;
     }
 
     .close-btn {
       position: absolute;
-      top: 10px;
+      top: 50%;
       right: 12px;
+      transform: translateY(-50%); /* vertically center */
       color: white;
-      font-size: 33px;
+      font-size: 22px;
       font-weight: bold;
       cursor: pointer;
+      line-height: 1;
     }
 
     .close-btn:hover {
